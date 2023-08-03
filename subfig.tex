@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{subcaption}
+
+\title{A project with images}
+\author{Overleaf}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=8cm]{img.jpg}
+    \caption{An image of a galaxy}
+    \label{fig:galaxy}
+
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.05 ,width = 6cm,angle=50]{img.jpg}
+    \caption{An image of a galaxy}
+    \label{fig:galaxy}
+\end{figure}
+
+\newpage
+
+\section{Wrapped Text around Figure}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+\centering
+    \includegraphics[width=0.35\textwidth]{img.jpg}
+    \caption{This is a figure positioned at the right and wrapped with text.}
+    \label{fig:img1}
+\end{wrapfigure}
+\blindtext
+\blindtext 
+\begin{wrapfigure}{l}{0.35\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{img.jpg}
+    \caption{This is a figure positioned at the left and wrapped with text .}
+    \label{fig :img2}
+\end{wrapfigure}
+
+\blindtext
+
+
+
+
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{graph 1.png}  
+  \caption{Put your sub-caption here}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{graph 2.png}  
+  \caption{Put your sub-caption here}
+  \label{fig:sub-second}
+\end{subfigure}
+\end{figure}
+
+\newpage
+
+\begin{tabular}{c c c}
+
+    \includegraphics[width=.35\linewidth]{graph 1.png}
+    & \includegraphics[width=.35\linewidth]{graph 2.png}
+     & \includegraphics[width=.35\linewidth]{graph 3.png}
+     \\ Graph 1 & Graph 2 & Graph \\
+     
+\end{tabular}
+
+
+
+
+
+
+\end{document}
