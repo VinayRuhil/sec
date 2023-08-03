@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{xcolor}
+\definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
+\usemintedstyle{monokai}
+
+
+\title{SEC:DOCUMENT PRESENTATION AND PREPARATION }
+\author{Daksh}
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Table}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ 1 & DMS & 16115 & 7.73 \\ 
+ \hline
+2 & DMS & 16116 & 6.37 \\ 
+ \hline
+3 & CPP & 16117 & 7.35 \\ 
+ \hline
+4 & CPP & 16118 & 5.47 \\ 
+ \hline
+5 & PC & 16119 & 6.69 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\section{Algorithm}
+\begin{minted}[bgcolor = arsenic, fontsize = \footnotesize]{python}
+    names = ['Kelly' , 'Jessa' , 'Emma']
+    #outer loop
+    for name in names:
+    #inner while loop
+    count = 0
+    while count < 5:
+    print(name ,  end = ' ')
+    #increment counter
+    count = count + 1
+print( )
+\end{minted}
+
+
+\section{Equation}
+
+\[ f(x,y) = \begin{cases}
+\cfrac{x^2y}{x^4+y^2} & \quad \text{if }(x,y) \neq (0,0) \\
+    0 & \quad \text{if } (x,y) = (0,0) 
+\end{cases} \]
+
+\[e^{i\theta_1} = \cos \theta_1 + i\sin \theta_1\]
+
+\[u\cos(\pi u^3) + v + 1 = x\]
+
+\[u + v^2\cos(\pi v) + 1 = y\]
+
+
+
+\end{document}
