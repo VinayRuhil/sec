@@ -1,0 +1,103 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Copenhagen}
+\usecolortheme{default}
+\usepackage{subfig}
+\usepackage{subfigure}
+\title[SEC]{\textbf{SEC:DOCUMENT PREPARATION AND PRESENTATION}}
+\subtitle{\underline{Assignment}}
+\author[Vinay Ruhil]
+{Beamer Presentation }
+\logo{\includegraphics[height=2cm]{keshav.jpg}}
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+\section{CHEMISTRY}
+\begin{frame}{ABOUT PERIODIC TABLE}
+    The periodic table is a tabular array of the chemical elements organized by atomic number, from the element with the lowest atomic number, hydrogen, to the element with the highest atomic number, oganesson. The atomic number of an element is the number of protons in the nucleus of an atom of that element
+
+    \begin{center}
+      \includegraphics[height=3cm]{pp.png}  
+    \end{center}
+    
+\end{frame}
+\begin{frame}{Molecular geometry}
+    Molecular geometry, also known as the molecular structure, is the three-dimensional structure or arrangement of atoms in a molecule.
+    \begin{figure}[h]
+     \centering
+     \subfigure[1]{
+     \includegraphics[width=0.25\textwidth]{img1.png}
+     }
+     \subfigure[2]{
+     \includegraphics[width=0.25\textwidth]{img2.png}
+     }
+     \subfigure[3]{
+     \includegraphics[width=0.25\textwidth]{img3.png}
+     }
+     \caption{STRUCTURE}
+\end{figure}
+\end{frame}
+\section{PHYSCIS}
+\begin{frame}{Newton’s first law}
+    This is a text in second frame. For the sake of showing an example.
+
+\begin{itemize}
+    \item Text visible on slide 1
+    \item Text visible on slide 2
+    \item Text visible on slides 3
+    \item Text visible on slide 4
+\end{itemize}
+\end{frame}
+\begin{frame}
+In this slide \pause
+the text will be partially visible \pause
+And finally everything will be there
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Sample frame title}}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+\begin{frame}
+\frametitle{\textbf{Two-column slide}}
+\begin{columns}
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second thoughts, this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+\end{document}
