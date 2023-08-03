@@ -1,0 +1,197 @@
+\documentclass{book}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{subfigure}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+\usepackage[nottoc]{tocbibind}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+
+
+\begin{document}
+
+
+
+\begin{center}
+\underline {Preface}\\
+\end{center}
+
+\lipsum[1-2]
+\newpage
+
+\begin{center}
+\underline {Dedication}\\
+\end{center}\\
+
+TO LEON WERTH\\
+
+I ask the indulgence of the children who may read this book for dedicating it to a grown-up. I have a serious reason: he is the best friend I have in the world. I have another reason: this grown-up understands everything, even books about children. I have a third reason: he lives in France where he is hungry and cold. He needs cheering up. If all these reasons are not enough, I will dedicate the book to the child from whom this grown-up grew. All grown-ups were once children—although few of them remember it. And so I correct my dedication:\\
+
+TO LEON WERTH\\
+WHEN HE WAS A LITTLE BOY
+
+
+
+
+
+\tableofcontents
+
+\chapter{First Chapter}
+\lipsum[1-3]
+
+\chapter{Long table}
+\listoftables
+\begin{center}
+\begin{longtable}{|l|l|l|}
+\caption{A sample long table.} \label{tab:long} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c|}{\textbf{Third column}} \\ \hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c|}{\textbf{Third column}} \\ \hline 
+\endhead
+
+\hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+One & abcdef ghjijklmn & 123.456778 \\
+
+
+
+
+\end{longtable}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{ |c|c|c|c| }
+    \hline
+    \multicolumn{3}{|c|}{Data}  \\
+    \hline
+    & & \\
+    \multirow{6}{4em}{Gujarat} & Gandhi Nagar & Gujarati \\
+    & & \\
+    & Chattisgarh & Hindi \\
+    & & \\
+    & Chandigarh & Punjabi \\
+    & & \\
+    & Imphal & Hindi \\
+    & & \\
+    & Luckhnow & Hindi \\
+    \hline
+    \end{tabular}
+    \caption{Merged rows and column}
+    \label{tab:my_label}
+    \end{table}
+\end{center}
+
+
+\chapter{Third Chapter}
+\begin{abstract}
+    The state of Jammu and Kashmir's original accession, like all other princely states, was on three matters: defence, foreign affairs and communications. All the princely states were invited to send representatives to India's Constituent Assembly, which was formulating a constitution for the whole of India. They were also encouraged to set up constituent assemblies for their own states. Most states were unable to set up assemblies in time, but a few states did, in particular Saurashtra Union, Travancore-Cochin and Mysore. Even though the States Department developed a model constitution for the states, on 19 May 1949, the rulers and chief ministers of all the states met in the presence of States Department and agreed that separate constitutions for the states were not necessary.
+\end{abstract}
+
+\section{ARTICLE 370}
+
+Article 370 of the Indian constitution[a] gave special status to Jammu and Kashmir, a region located in the northern part of Indian subcontinent and part of the larger region of Kashmir which has been the subject of a dispute between India, Pakistan and China since 1947.[4][5] Jammu and Kashmir was administered by India as a state from 1952 to 31 October 2019, and Article 370 conferred on it the power to have a separate constitution, a state flag, and autonomy of internal administration.[6][7]
+
+\begin{multicols}{2}
+
+
+Article 370 was drafted in Part XXI of the Indian constitution titled "Temporary, Transitional and Special Provisions".[8] It stated that the Constituent Assembly of Jammu and Kashmir would be empowered to recommend the extent to which the Indian constitution would apply to the state. 
+
+In the case of Jammu and Kashmir, the state's politicians decided to form a separate constituent assembly for the state. 
+
+\end{multicols}
+
+\listoffigures
+
+\begin{figure}
+    \subfigure{
+    \includegraphics[width=.6\textwidth]{img .jpg}
+    }
+    \subfigure{
+    \includegraphics[width=.6\textwidth]{img1.jpg}
+    }
+    \subfigure{
+    \includegraphics[width=.6\textwidth]{img2.jpg}
+    }
+    \subfigure{
+    \includegraphics[width=.6\textwidth]{img3.jpg}
+    } 
+    \caption{Four Figures}
+    \label{fig:my_label}
+\end{figure}
+
+
+\chapter{Fourth chapter}
+\section{First Section}
+
+This document is an example of \texttt{natbib} package using in bibliography management.\\
+Article 370 of the Indian constitution[a] gave special status to Jammu and Kashmir, a region located in the northern part of Indian subcontinent and part of the larger region of Kashmir which has been the subject of a dispute between India, Pakistan and China since 1947.\\
+Three items are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, the  journal paper \citet{einstein}, and the 
+Donald Knuth's website \cite{latexcompanion}. The \LaTeX\ related items are
+\cite{latexcompanion,knuthwebsite}. 
+
+
+
+\bibliography{new}
+
+\chapter{Sixth Chapter}
+\[ 1 + 2 = 3\]
+\[ 1 = 3 - 2\]
+
+\[ f(x) = x^2\]
+\[ g(x) = \frac{1}{x} \]
+
+\[ F(x) = \int_{b}^{a} \frac{1}{3} x^3 \]
+
+\[ A = \frac{\pi r^2}{2}  \]
+\[  = \frac{1}{2} \pi r^2  \]
+
+\end{document}
