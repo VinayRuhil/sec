@@ -1,0 +1,54 @@
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{multirow}
+\title{\textbf{Document preparation and presentation software: Latex}}
+\author{your name }
+\date{August 2023}
+\usepackage{amsmath}
+\begin{document}
+\maketitle
+\begin{itemize}
+    \item Some equations are\\
+    \begin{center}
+        $\iint_{S} \Vec{A}.\Vec{dS}=\iiint_{V}{(\nabla.\Vec{A})dV}$ \\
+       $ \lim_{\triangle V\to 0} (\frac{1}{\triangle V} )=\infty $       
+    \end{center}
+
+    \item Format for a table is -
+\begin{center}
+
+\begin{tabular}{ |p{4cm}|p{2cm}|p{2cm}| } 
+\hline
+\multirow{2}{4em}{col1(width=4cm)} & col2(width & col3(width\\
+ & =2cm) & =2cm)\\
+\hline
+\multirow{3}{4em}{Multiple row merged } & cell2 & cell3 \\\cline{2-3}
+
+ & cell5 & cell6 \\\cline{2-3}  
+
+& cell8 & cell9 \\\cline{2-3} 
+\hline
+\end{tabular}
+\end{center}
+
+    \item Image insertion\\
+\begin{figure}[htbp]
+     \begin{subfigure}
+         \centering
+         \includegraphics[width=0.30\textwidth]{image.png}
+         \label{keshav logo}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}
+         \centering
+         \includegraphics[width=0.30\textwidth]{image.png}
+         \label{keshav logo}
+     \end{subfigure}     
+        \caption{subfigures}
+        \label{fig:subfigs}
+\end{figure}
+\end{itemize}
+
+\end{document}

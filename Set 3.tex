@@ -1,0 +1,103 @@
+
+\documentclass{beamer}
+\usepackage{graphicx} 
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{blindtext}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{longtable}
+\title{beamer pacakage}
+\author{unknowm }
+\date{August 2023}
+\institute{keshav mahavidhayalya}
+\logo{\includegraphics[width=1 in,height=1 in]{logo.png}}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{table of content}
+    \tableofcontents
+\end{frame}
+
+\AtBeginSection[]{
+\begin{frame}
+  \frametitle{Table of contents}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\section{mathematical equation}
+\begin{frame}
+ \frametitle{euations}
+ \blindtext[0-1]
+ \begin{center}
+     {$\sum_{i=1}^{n}i^1=\frac{n(n+1)}{2}=\frac{n^2}{2}+\frac{n}{2}$}\\
+     {$\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}=\frac{n^3}{3}+\frac{n^2}{2}+\frac{n}{6}$}\\
+ \end{center}
+\end{frame}
+
+\section{table}
+\begin{frame}
+   \frametitle{table} 
+   \lipsum[0-1]
+   \begin{table}
+       \centering
+       \begin{tabular}{|c|c|}
+           \hline
+          color  &  Animal \\
+          \hline
+          white  & dog \\
+          \hline
+          green & parrot\\
+          \hline
+       \end{tabular}
+       \caption{table 1}
+       \label{tab:my_label}
+   \end{table}
+   \begin{block}{note}
+   any notes or remark
+   \end{block}
+\end{frame}
+\section{figues-subfigures}
+  \begin{frame}{images} 
+    \begin{figure}
+        \centering
+        \begin{center}
+        \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=3cm]{f1.png}
+        \caption{Fig.1}
+        \end{subfigure}
+        \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=3cm]{f2.png}
+        \caption{Fig.2}
+        \end{subfigure}
+        \\
+        \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=3cm]{f1.png}
+        \caption{Fig.3}
+        \end{subfigure}
+        \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=3cm]{f2.png}
+        \caption{Fig.4}
+        \end{subfigure}        
+        \end{center}
+        \caption{Subfigures}
+    \end{figure}  
+\end{frame}
+\section{theory}
+\begin{frame}
+\frametitle{points}
+\begin{itemize}
+    \item this is item 1.\\
+    \item this is item 2.\\
+    \item this is item 3.\\
+\end{itemize}
+ \begin{enumerate}
+     \item this is item numbered 1.\\
+     \item this is item numbered 2.\\
+     \item this is item numbered 3.\\
+ \end{enumerate}   
+\end{frame}
+\end{document}

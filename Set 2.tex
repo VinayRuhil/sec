@@ -1,0 +1,112 @@
+
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[square,number]{natbib}
+\bibliographystyle{abbrvnat}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+
+\title{\huge{\textbf{\textcolor{blue}{title}}}}
+\author{\textcolor{red}{unknown}}
+\maketitle
+
+\begin{document}
+
+
+    \section*{Preface}
+        \lipsum[1-3]
+    \newpage
+    \section*{Dedication}
+        \lipsum[1-2]
+    \newpage
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    
+    \chapter{Images in latex}
+        \section{Lipsum}
+            \lipsum[1-3]\cite{eins}
+        \section{Subfigure}
+            \lipsum[1-2]\cite{goose}
+            \begin{figure}
+                \centering
+                \includegraphics[height=6in,width=10in]{Screenshot 2022-02-09 173152.png}
+                \caption{Bridge}
+                \label{pic}
+            \end{figure}
+            \begin{figure}
+                \begin{subfigure}[]{0.4\linewidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{Screenshot 2022-02-14 182217.png}
+                    \caption{Pic1}
+                \end{subfigure}
+                \begin{subfigure}[]{0.4\linewidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{Screenshot 2022-02-15 131800.png}
+                    \caption{Pic2}
+                \end{subfigure}
+                \centering
+                \begin{subfigure}[]{0.4\linewidth}
+                    \centering
+                    \includegraphics[width=\linewidth]{Screenshot 2022-02-14 182217.png}
+                    \caption{Pic3}
+                \end{subfigure}
+                \caption{Figure with Subfigures}
+                \label{fig:enter-label}
+            \end{figure}
+    \chapter{Texts in latex}
+       \section{colored text}
+       \textcolor{yellow}{\lipsum[0-1]} \textcolor{green}{\lipsum[0-1]}\textcolor{red}{\lipsum[0-1]}\textcolor{blue}{\lipsum[0-1]} 
+       \textcolor{cyan}{\lipsum[0-1]}
+       \section{items}
+       \begin{itemize}
+       \color{blue}\item blue
+       \color{red}\item red
+       \color{green}\item green
+       \color{cyan}\item cyan
+       \color{magenta}\item magenta
+       \color{brown}\item brown
+       \color{lime}\item lime
+       \color{teal}\item teal
+       \color{pink}\item pink
+\end{itemize}    
+    \chapter{Mathematical Equations}  
+      \begin{center}
+       
+\huge $$ \nabla.E = \frac{\rho}{\epsilon_0}$$
+\huge $$ \nabla . B = 0$$
+\huge $$ \nabla \times  E = -\frac{\partial B}{\partial t}$$
+\huge $$\nabla \times B = \mu_0(J+\epsilon_0\frac{\partial E}{\partial t})$$
+\vspace{2cm}
+  
+        \end{center}
+            
+
+    \chapter{Tables}
+        \section{Simple Table}
+            \lipsum[1-2]\cite{nuth}\\
+
+            \begin{table}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                      abc & xyz & poi \\
+                     \hline
+                     pqr &  lmn & noi\\
+                    \hline
+                    cat & van & koi \\
+                    \hline
+                \end{tabular}
+                \caption{Simple table}
+            \end{table}
+        
+\bibliography{xyz.bib}
+\end{document}
